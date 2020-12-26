@@ -4,15 +4,17 @@
 
 ## Installation / Setup
 
-This is intended for macOS only, although it might work on linux too. You need python 3.x and a few libraries.
+This is intended for macOS only, although it might work on linux too. You need selenium / chromedriver ([instructions](https://sites.google.com/a/chromium.org/chromedriver/getting-started)), python 3.x, and a few libraries.
 
-If you don't have those libraries, you'll need to install the missing ones using pip, e.g.,  `pip install fire`. Follow the prompts.
+If you don't have those libraries, you'll need to install the missing ones using pip, e.g.,  `pip install fire selenium`.
 
 ## Usage
 
 First, set the `SAVE_PATH` variable in `book.py` to the folder where you want to save the files. The script will create new folders inside this folder, for any book you export. It should be the absolute path, e.g,. `/Users/my_username/Desktop`, **not** `/Desktop`.
 
-You may also need to modify the `SSO_INTRO_URL` for your particular instituation / login. This should not be the page that has the login form, but rather a page that requires a login and will redirect you to the login page itself. It could be a list view, or a book detail view.
+You will also want to change the `CHROMEDRIVER_PATH` based on where you have it installed.
+
+You may need to modify the `SSO_INTRO_URL` for your particular instituation / login. This should not be the page that has the login form, but rather a page that requires a login and will redirect you to the login page itself. It could be a list view, or a book detail view.
 
 To run the tool in Terminal, move to the directory where the script is saved (e.g., `cd /path/to/book.py`):
 ```
