@@ -5,8 +5,8 @@ from os import makedirs, listdir
 from os.path import isfile, join, exists, splitext
 import fire
 
-CHROMEDRIVER_PATH = '/Users/mleclimber/Desktop/chromedriver/chromedriver'
-SAVE_PATH = '/Users/mleclimber/Desktop'
+CHROMEDRIVER_PATH = '/path/to/chromedriver'
+SAVE_PATH = '/path/to/where/you/want/to/save'
 # can't go directly to the SSO login page. Need to be redirected.
 SSO_INTRO_URL = 'https://bobcat.library.nyu.edu/primo-explore/search?query=any,contains,Art%20of%20the%20Past:%20Sources%20and%20Reconstruction:%20Proceedings%20of%20the%20First%20Symposium%20of%20the%20Art%20Technological%20Source%20Research%20Study%20Group&tab=all&search_scope=all&sortby=rank&vid=NYU&lang=en_US&mode=basic'
 
